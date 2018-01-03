@@ -1,6 +1,6 @@
 {
   "name": "v-suggestions",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Vue autosuggestion with custom templates",
   "author": "Anjaneya Sivan <noreply@pucham.com>",
   "scripts": {
