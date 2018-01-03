@@ -2,7 +2,7 @@
   <div id="app">
     <header class="page-header">
       <div class="wrap">
-        <h2 class="main-title title is-2">v-autosuggest</h2>
+        <h2 class="main-title title is-2">v-suggestions</h2>
         <span class="caption">Automatic suggestions with custom templates</span>
       </div>
     </header>
@@ -12,9 +12,9 @@
           <div class="columns">
             <div class="column is-12">
               <h4 class="title is-4">Installation</h4>
-              <pre>npm install v-autosuggest --save</pre>
+              <pre>npm install v-suggestions --save</pre>
               <p><strong>OR you can use yarn</strong></p>
-              <pre>yarn add v-autosuggest</pre>
+              <pre>yarn add v-suggestions</pre>
             </div>
           </div>
           <div class="columns">
