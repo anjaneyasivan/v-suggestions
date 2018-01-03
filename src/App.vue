@@ -287,7 +287,7 @@
         if (query.trim().length === 0) {
           return null
         }
-        const url = `http://api.duckduckgo.com/?q=${query}&format=json&pretty=1`
+        const url = `https://api.duckduckgo.com/?q=${query}&format=json&pretty=1`
         return new Promise(resolve => {
           axios.get(url).then(response => {
             const items = []
