@@ -1,0 +1,72 @@
+.v-suggestions {
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.v-suggestions .suggestions {
+  position: absolute;
+  left: 0;
+  top: 36px;
+  width: 100%;
+  z-index: 100;
+  background: #ffffff;
+}
+
+.v-suggestions .items {
+  list-style: none;
+  border: 1px solid #EEE;
+  margin: 0;
+  padding: 0;
+  border-width: 0 1px 1px 1px;
+}
+
+.v-suggestions .item {
+  border-bottom: 1px solid #eee;
+  padding: .4rem;
+}
+
+.v-suggestions .items .item.is-active, .v-suggestions .items .item:hover {
+  background: #eee;
+  cursor: pointer;
+}
+
+.v-suggestions-input {
+  -webkit-appearance: none;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 1rem;
+  height: 2.25em;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  line-height: 1.5;
+  padding-bottom: calc(0.375em - 1px);
+  padding-left: calc(0.625em - 1px);
+  padding-right: calc(0.625em - 1px);
+  padding-top: calc(0.375em - 1px);
+  position: relative;
+  vertical-align: top;
+  background-color: white;
+  border-color: #dbdbdb;
+  color: #363636;
+  max-width: 100%;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.v-suggestions-input:focus, .v-suggestions-input:active {
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  outline: none;
+}
