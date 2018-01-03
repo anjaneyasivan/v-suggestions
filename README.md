@@ -1,4 +1,4 @@
-# v-suggestion
+# v-suggestions
 
 > suggestions with custom templates
 
