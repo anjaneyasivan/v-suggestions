@@ -2,6 +2,7 @@
   <div class="v-suggestions">
     <input type="text" class="input completor-input"
            v-on:keydown="onKeyDown"
+           v-on:blur="hideItems"
            v-on:focus="showItems = true"
            v-model="query"
            :placeholder="extendedOptions.placeholder">
