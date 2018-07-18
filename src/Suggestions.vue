@@ -1,6 +1,7 @@
 <template>
   <div class="v-suggestions">
-    <input type="text" class="input completor-input"
+    <input type="text" :class="extendedOptions.inputClass"
+           v-bind="$attrs"
            v-on:keydown="onKeyDown"
            v-on:blur="hideItems"
            v-on:focus="showItems = true"
@@ -9,6 +10,7 @@
     <div class="suggestions">
       <ul class="items" v-show="items.length > 0 && showItems === true">
         <li class="item"
+            :key="index"
             v-for="(item, index) in items"
             @click.prevent="selectItem(index)"
             v-bind:class="{ 'is-active': index === activeItemIndex }">
@@ -26,6 +28,7 @@
   import './Suggestions.css'
 
   export default {
+    inheritAttributes: true,
     props: {
       options: {
         type: Object,
@@ -46,10 +49,10 @@
     data () {
       const defaultOptions = {
         debounce: 0,
-        placeholder: ''
+        placeholder: '',
+        inputClass: 'input'
       }
       const extendedOptions = Object.assign({}, defaultOptions, this.options)
-      // console.log(extendedOptions)
       return {
         extendedOptions,
         query: this.value,
