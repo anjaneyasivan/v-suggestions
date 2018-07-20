@@ -15,7 +15,7 @@ yarn add v-suggestion
 ```javascript
 import Suggestions from 'v-suggestions'
 import 'v-suggestions/dist/v-suggestions.css' // you can import the stylesheets also (optional)
-Vue.use(Suggestions)
+Vue.component('suggestions', Suggestions)
 ```
 Component supports Vue 2.1.0+ version. v-suggetions uses slot-scope based templates for customizing suggestions.
 ## Demo
