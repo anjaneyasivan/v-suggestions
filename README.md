@@ -6,10 +6,10 @@
 
 ``` bash
 # npm
-npm install v-suggestion
+npm install v-suggestions
 
 # yarn
-yarn add v-suggestion
+yarn add v-suggestions
 
 ```
 ```javascript
