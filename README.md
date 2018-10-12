@@ -93,7 +93,7 @@ export default {
     return {
       searchQuery: '',
       selectedSearchItem: null,
-      options: {}
+      searchOptions: {}
     }
   },
   methods: {
