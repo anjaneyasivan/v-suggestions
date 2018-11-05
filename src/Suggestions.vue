@@ -6,6 +6,7 @@
            v-on:blur="hideItems"
            v-on:focus="showItems = true"
            v-model="query"
+           :autocomplete="Math.random()"
            :placeholder="extendedOptions.placeholder">
     <div class="suggestions">
       <ul class="items" v-show="items.length > 0 && showItems === true">
