@@ -93,7 +93,7 @@
       hideItems () {
         setTimeout(() => {
           this.showItems = false
-        }, 150)
+        }, 300)
       },
       showResults () {
         this.showItems = true
