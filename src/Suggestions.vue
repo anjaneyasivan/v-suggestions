@@ -116,6 +116,10 @@
             this.selectItem()
             e.preventDefault()
             break
+          case 27:
+            this.showItems = false
+            e.preventDefault()
+            break
           default:
             return true
         }
