@@ -124,3 +124,19 @@ export default {
   }
 }
 ```
+
+
+## Custom key events
+
+You can pass the `@keyDown` event to handle custom key events, e.g. hitting enter when no item was selected.
+
+```html
+<suggestions
+  v-model="searchQuery"
+  :options="searchOptions"
+  :onItemSelected="onSearchItemSelected"
+  :onInputChange="onInputChange"
+  @keyDown="onInputKeyDown"
+>
+</suggestions>
+```
