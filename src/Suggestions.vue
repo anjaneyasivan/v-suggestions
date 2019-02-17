@@ -103,6 +103,7 @@
         this.query = value
       },
       onKeyDown (e) {
+        this.$emit('keyDown', e.keyCode)
         switch (e.keyCode) {
           case 40:
             this.highlightItem('down')
