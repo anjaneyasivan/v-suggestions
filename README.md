@@ -31,6 +31,7 @@ Component supports Vue 2.1.0+ version. v-suggetions uses slot-scope based templa
 | options.debounce | Integer | A delay in milliseconds between each "onInputChange" events. If unspecified, it will be ignored. Comes in handy for ajax requests. See examples. |
 |options.placeholder | string | A placeholder string for search (optional) |
 |options.inputClass | string | Override classnames given to the input text element (optional) |
+|options.wrappingClass | string | Additional classnames given to the wrapping div of the input text element (optional) |
 
 ## Simple Example
 ```html
