@@ -1,5 +1,5 @@
 <template>
-  <div class="v-suggestions">
+  <div class="v-suggestions" :class="extendedOptions.wrappingClass">
     <input type="text" :class="extendedOptions.inputClass"
            v-bind="$attrs"
            v-on:keydown="onKeyDown"
