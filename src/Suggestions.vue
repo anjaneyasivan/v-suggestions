@@ -51,7 +51,7 @@
       const defaultOptions = {
         debounce: 0,
         placeholder: '',
-        inputClass: 'input'
+        inputClass: 'v-suggestions-input'
       }
       const extendedOptions = Object.assign({}, defaultOptions, this.options)
       return {
